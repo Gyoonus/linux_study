@@ -1,0 +1,250 @@
+BKL.c: In function ‘__preempt_count_add’:
+BKL.c:96:16: error: ‘__preempt_count’ undeclared (first use in this function); did you mean ‘__preempt_count_add’?
+  raw_cpu_add_4(__preempt_count, val);
+                ^
+BKL.c:37:17: note: in definition of macro ‘percpu_add_op’
+  typedef typeof(var) pao_T__;     \
+                 ^~~
+BKL.c:96:2: note: in expansion of macro ‘raw_cpu_add_4’
+  raw_cpu_add_4(__preempt_count, val);
+  ^~~~~~~~~~~~~
+BKL.c:96:16: note: each undeclared identifier is reported only once for each function it appears in
+  raw_cpu_add_4(__preempt_count, val);
+                ^
+BKL.c:37:17: note: in definition of macro ‘percpu_add_op’
+  typedef typeof(var) pao_T__;     \
+                 ^~~
+BKL.c:96:2: note: in expansion of macro ‘raw_cpu_add_4’
+  raw_cpu_add_4(__preempt_count, val);
+  ^~~~~~~~~~~~~
+BKL.c:49:15: error: expected ‘:’ or ‘)’ before ‘__percpu_arg’
+    asm("incb "__percpu_arg(0) : "+m" (var)); \
+               ^
+BKL.c:92:34: note: in expansion of macro ‘percpu_add_op’
+ #define raw_cpu_add_4(pcp, val)  percpu_add_op((pcp), val)
+                                  ^~~~~~~~~~~~~
+BKL.c:96:2: note: in expansion of macro ‘raw_cpu_add_4’
+  raw_cpu_add_4(__preempt_count, val);
+  ^~~~~~~~~~~~~
+BKL.c:50:3: error: ‘else’ without a previous ‘if’
+   else if (pao_ID__ == -1)    \
+   ^
+BKL.c:92:34: note: in expansion of macro ‘percpu_add_op’
+ #define raw_cpu_add_4(pcp, val)  percpu_add_op((pcp), val)
+                                  ^~~~~~~~~~~~~
+BKL.c:96:2: note: in expansion of macro ‘raw_cpu_add_4’
+  raw_cpu_add_4(__preempt_count, val);
+  ^~~~~~~~~~~~~
+BKL.c:51:15: error: expected ‘:’ or ‘)’ before ‘__percpu_arg’
+    asm("decb "__percpu_arg(0) : "+m" (var)); \
+               ^
+BKL.c:92:34: note: in expansion of macro ‘percpu_add_op’
+ #define raw_cpu_add_4(pcp, val)  percpu_add_op((pcp), val)
+                                  ^~~~~~~~~~~~~
+BKL.c:96:2: note: in expansion of macro ‘raw_cpu_add_4’
+  raw_cpu_add_4(__preempt_count, val);
+  ^~~~~~~~~~~~~
+BKL.c:52:3: error: ‘else’ without a previous ‘if’
+   else       \
+   ^
+BKL.c:92:34: note: in expansion of macro ‘percpu_add_op’
+ #define raw_cpu_add_4(pcp, val)  percpu_add_op((pcp), val)
+                                  ^~~~~~~~~~~~~
+BKL.c:96:2: note: in expansion of macro ‘raw_cpu_add_4’
+  raw_cpu_add_4(__preempt_count, val);
+  ^~~~~~~~~~~~~
+BKL.c:53:19: error: expected ‘:’ or ‘)’ before ‘__percpu_arg’
+    asm("addb %1, "__percpu_arg(0)   \
+                   ^
+BKL.c:92:34: note: in expansion of macro ‘percpu_add_op’
+ #define raw_cpu_add_4(pcp, val)  percpu_add_op((pcp), val)
+                                  ^~~~~~~~~~~~~
+BKL.c:96:2: note: in expansion of macro ‘raw_cpu_add_4’
+  raw_cpu_add_4(__preempt_count, val);
+  ^~~~~~~~~~~~~
+BKL.c:59:15: error: expected ‘:’ or ‘)’ before ‘__percpu_arg’
+    asm("incw "__percpu_arg(0) : "+m" (var)); \
+               ^
+BKL.c:92:34: note: in expansion of macro ‘percpu_add_op’
+ #define raw_cpu_add_4(pcp, val)  percpu_add_op((pcp), val)
+                                  ^~~~~~~~~~~~~
+BKL.c:96:2: note: in expansion of macro ‘raw_cpu_add_4’
+  raw_cpu_add_4(__preempt_count, val);
+  ^~~~~~~~~~~~~
+BKL.c:60:3: error: ‘else’ without a previous ‘if’
+   else if (pao_ID__ == -1)    \
+   ^
+BKL.c:92:34: note: in expansion of macro ‘percpu_add_op’
+ #define raw_cpu_add_4(pcp, val)  percpu_add_op((pcp), val)
+                                  ^~~~~~~~~~~~~
+BKL.c:96:2: note: in expansion of macro ‘raw_cpu_add_4’
+  raw_cpu_add_4(__preempt_count, val);
+  ^~~~~~~~~~~~~
+BKL.c:61:15: error: expected ‘:’ or ‘)’ before ‘__percpu_arg’
+    asm("decw "__percpu_arg(0) : "+m" (var)); \
+               ^
+BKL.c:92:34: note: in expansion of macro ‘percpu_add_op’
+ #define raw_cpu_add_4(pcp, val)  percpu_add_op((pcp), val)
+                                  ^~~~~~~~~~~~~
+BKL.c:96:2: note: in expansion of macro ‘raw_cpu_add_4’
+  raw_cpu_add_4(__preempt_count, val);
+  ^~~~~~~~~~~~~
+BKL.c:62:3: error: ‘else’ without a previous ‘if’
+   else       \
+   ^
+BKL.c:92:34: note: in expansion of macro ‘percpu_add_op’
+ #define raw_cpu_add_4(pcp, val)  percpu_add_op((pcp), val)
+                                  ^~~~~~~~~~~~~
+BKL.c:96:2: note: in expansion of macro ‘raw_cpu_add_4’
+  raw_cpu_add_4(__preempt_count, val);
+  ^~~~~~~~~~~~~
+BKL.c:63:19: error: expected ‘:’ or ‘)’ before ‘__percpu_arg’
+    asm("addw %1, "__percpu_arg(0)   \
+                   ^
+BKL.c:92:34: note: in expansion of macro ‘percpu_add_op’
+ #define raw_cpu_add_4(pcp, val)  percpu_add_op((pcp), val)
+                                  ^~~~~~~~~~~~~
+BKL.c:96:2: note: in expansion of macro ‘raw_cpu_add_4’
+  raw_cpu_add_4(__preempt_count, val);
+  ^~~~~~~~~~~~~
+BKL.c:69:15: error: expected ‘:’ or ‘)’ before ‘__percpu_arg’
+    asm("incl "__percpu_arg(0) : "+m" (var)); \
+               ^
+BKL.c:92:34: note: in expansion of macro ‘percpu_add_op’
+ #define raw_cpu_add_4(pcp, val)  percpu_add_op((pcp), val)
+                                  ^~~~~~~~~~~~~
+BKL.c:96:2: note: in expansion of macro ‘raw_cpu_add_4’
+  raw_cpu_add_4(__preempt_count, val);
+  ^~~~~~~~~~~~~
+BKL.c:70:3: error: ‘else’ without a previous ‘if’
+   else if (pao_ID__ == -1)    \
+   ^
+BKL.c:92:34: note: in expansion of macro ‘percpu_add_op’
+ #define raw_cpu_add_4(pcp, val)  percpu_add_op((pcp), val)
+                                  ^~~~~~~~~~~~~
+BKL.c:96:2: note: in expansion of macro ‘raw_cpu_add_4’
+  raw_cpu_add_4(__preempt_count, val);
+  ^~~~~~~~~~~~~
+BKL.c:71:15: error: expected ‘:’ or ‘)’ before ‘__percpu_arg’
+    asm("decl "__percpu_arg(0) : "+m" (var)); \
+               ^
+BKL.c:92:34: note: in expansion of macro ‘percpu_add_op’
+ #define raw_cpu_add_4(pcp, val)  percpu_add_op((pcp), val)
+                                  ^~~~~~~~~~~~~
+BKL.c:96:2: note: in expansion of macro ‘raw_cpu_add_4’
+  raw_cpu_add_4(__preempt_count, val);
+  ^~~~~~~~~~~~~
+BKL.c:72:3: error: ‘else’ without a previous ‘if’
+   else       \
+   ^
+BKL.c:92:34: note: in expansion of macro ‘percpu_add_op’
+ #define raw_cpu_add_4(pcp, val)  percpu_add_op((pcp), val)
+                                  ^~~~~~~~~~~~~
+BKL.c:96:2: note: in expansion of macro ‘raw_cpu_add_4’
+  raw_cpu_add_4(__preempt_count, val);
+  ^~~~~~~~~~~~~
+BKL.c:73:19: error: expected ‘:’ or ‘)’ before ‘__percpu_arg’
+    asm("addl %1, "__percpu_arg(0)   \
+                   ^
+BKL.c:92:34: note: in expansion of macro ‘percpu_add_op’
+ #define raw_cpu_add_4(pcp, val)  percpu_add_op((pcp), val)
+                                  ^~~~~~~~~~~~~
+BKL.c:96:2: note: in expansion of macro ‘raw_cpu_add_4’
+  raw_cpu_add_4(__preempt_count, val);
+  ^~~~~~~~~~~~~
+BKL.c:79:15: error: expected ‘:’ or ‘)’ before ‘__percpu_arg’
+    asm("incq "__percpu_arg(0) : "+m" (var)); \
+               ^
+BKL.c:92:34: note: in expansion of macro ‘percpu_add_op’
+ #define raw_cpu_add_4(pcp, val)  percpu_add_op((pcp), val)
+                                  ^~~~~~~~~~~~~
+BKL.c:96:2: note: in expansion of macro ‘raw_cpu_add_4’
+  raw_cpu_add_4(__preempt_count, val);
+  ^~~~~~~~~~~~~
+BKL.c:80:3: error: ‘else’ without a previous ‘if’
+   else if (pao_ID__ == -1)    \
+   ^
+BKL.c:92:34: note: in expansion of macro ‘percpu_add_op’
+ #define raw_cpu_add_4(pcp, val)  percpu_add_op((pcp), val)
+                                  ^~~~~~~~~~~~~
+BKL.c:96:2: note: in expansion of macro ‘raw_cpu_add_4’
+  raw_cpu_add_4(__preempt_count, val);
+  ^~~~~~~~~~~~~
+BKL.c:81:15: error: expected ‘:’ or ‘)’ before ‘__percpu_arg’
+    asm("decq "__percpu_arg(0) : "+m" (var)); \
+               ^
+BKL.c:92:34: note: in expansion of macro ‘percpu_add_op’
+ #define raw_cpu_add_4(pcp, val)  percpu_add_op((pcp), val)
+                                  ^~~~~~~~~~~~~
+BKL.c:96:2: note: in expansion of macro ‘raw_cpu_add_4’
+  raw_cpu_add_4(__preempt_count, val);
+  ^~~~~~~~~~~~~
+BKL.c:82:3: error: ‘else’ without a previous ‘if’
+   else       \
+   ^
+BKL.c:92:34: note: in expansion of macro ‘percpu_add_op’
+ #define raw_cpu_add_4(pcp, val)  percpu_add_op((pcp), val)
+                                  ^~~~~~~~~~~~~
+BKL.c:96:2: note: in expansion of macro ‘raw_cpu_add_4’
+  raw_cpu_add_4(__preempt_count, val);
+  ^~~~~~~~~~~~~
+BKL.c:83:19: error: expected ‘:’ or ‘)’ before ‘__percpu_arg’
+    asm("addq %1, "__percpu_arg(0)   \
+                   ^
+BKL.c:92:34: note: in expansion of macro ‘percpu_add_op’
+ #define raw_cpu_add_4(pcp, val)  percpu_add_op((pcp), val)
+                                  ^~~~~~~~~~~~~
+BKL.c:96:2: note: in expansion of macro ‘raw_cpu_add_4’
+  raw_cpu_add_4(__preempt_count, val);
+  ^~~~~~~~~~~~~
+BKL.c:87:11: warning: implicit declaration of function ‘__bad_percpu_size’ [-Wimplicit-function-declaration]
+  default: __bad_percpu_size();     \
+           ^
+BKL.c:92:34: note: in expansion of macro ‘percpu_add_op’
+ #define raw_cpu_add_4(pcp, val)  percpu_add_op((pcp), val)
+                                  ^~~~~~~~~~~~~
+BKL.c:96:2: note: in expansion of macro ‘raw_cpu_add_4’
+  raw_cpu_add_4(__preempt_count, val);
+  ^~~~~~~~~~~~~
+BKL.c: In function ‘__raw_spin_lock’:
+BKL.c:106:2: warning: implicit declaration of function ‘barrier’ [-Wimplicit-function-declaration]
+  barrier(); \
+  ^
+BKL.c:112:2: note: in expansion of macro ‘preempt_disable’
+  preempt_disable();
+  ^~~~~~~~~~~~~~~
+BKL.c:113:2: warning: implicit declaration of function ‘spin_acquire’ [-Wimplicit-function-declaration]
+  spin_acquire(&lock->dep_map, 0, 0, _RET_IP_);
+  ^~~~~~~~~~~~
+BKL.c:113:20: error: ‘raw_spinlock_t {aka struct raw_spinlock}’ has no member named ‘dep_map’
+  spin_acquire(&lock->dep_map, 0, 0, _RET_IP_);
+                    ^~
+BKL.c:113:37: error: ‘_RET_IP_’ undeclared (first use in this function)
+  spin_acquire(&lock->dep_map, 0, 0, _RET_IP_);
+                                     ^~~~~~~~
+BKL.c:114:2: warning: implicit declaration of function ‘LOCK_CONTENDED’ [-Wimplicit-function-declaration]
+  LOCK_CONTENDED(lock, do_raw_spin_trylock, do_raw_spin_lock);
+  ^~~~~~~~~~~~~~
+BKL.c:114:23: error: ‘do_raw_spin_trylock’ undeclared (first use in this function); did you mean ‘__raw_spin_lock’?
+  LOCK_CONTENDED(lock, do_raw_spin_trylock, do_raw_spin_lock);
+                       ^~~~~~~~~~~~~~~~~~~
+                       __raw_spin_lock
+BKL.c:114:44: error: ‘do_raw_spin_lock’ undeclared (first use in this function); did you mean ‘__raw_spin_lock’?
+  LOCK_CONTENDED(lock, do_raw_spin_trylock, do_raw_spin_lock);
+                                            ^~~~~~~~~~~~~~~~
+                                            __raw_spin_lock
+BKL.c: At top level:
+BKL.c:118:17: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘_raw_spin_lock’
+ void __lockfunc _raw_spin_lock(raw_spinlock_t *lock)
+                 ^~~~~~~~~~~~~~
+BKL.c: In function ‘spin_lock’:
+BKL.c:124:29: warning: implicit declaration of function ‘_raw_spin_lock’; did you mean ‘__raw_spin_lock’? [-Wimplicit-function-declaration]
+ #define raw_spin_lock(lock) _raw_spin_lock(lock)
+                             ^
+BKL.c:127:2: note: in expansion of macro ‘raw_spin_lock’
+  raw_spin_lock(&lock->rlock);
+  ^~~~~~~~~~~~~
+BKL.c: In function ‘main’:
+BKL.c:132:23: error: storage size of ‘a’ isn’t known
+     struct spinlock_t a;
+                       ^

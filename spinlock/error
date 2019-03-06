@@ -1,0 +1,15 @@
+In file included from preemtion.c:2:0:
+count.h:23:1: warning: ‘noderef’ attribute directive ignored [-Wattributes]
+ DEFINE_PER_CPU(int, __preempt_count) = INIT_PREEMPT_COUNT;
+ ^~~~~~~~~~~~~~
+count.h:23:1: warning: ‘address_space’ attribute directive ignored [-Wattributes]
+preemtion.c: In function ‘__preempt_count_add’:
+preemtion.c:70:11: warning: implicit declaration of function ‘__bad_percpu_size’; did you mean ‘__percpu_arg’? [-Wimplicit-function-declaration]
+  default: __bad_percpu_size();     \
+           ^
+preemtion.c:75:34: note: in expansion of macro ‘percpu_add_op’
+ #define raw_cpu_add_4(pcp, val)  percpu_add_op((pcp), val)
+                                  ^~~~~~~~~~~~~
+preemtion.c:80:2: note: in expansion of macro ‘raw_cpu_add_4’
+  raw_cpu_add_4(__preempt_count, val);
+  ^~~~~~~~~~~~~
